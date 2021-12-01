@@ -39,4 +39,4 @@ jobs:
         with:
           app-name: openhackx6e34ru4trips
           slot-name: production
-          images: "openhackx6e34ru4acr.azurecr.io/devopsoh/api-user-trips:${{ github.sha }}"
+          images: "openhackx6e34ru4acr.azurecr.io/devopsoh/api-trips:${{ github.sha }}"
