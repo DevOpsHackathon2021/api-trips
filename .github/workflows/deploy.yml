@@ -19,4 +19,4 @@ jobs:
     - name: Build app in ACR and push
       run: |
         echo "Building API-USER-GO image..."
-        az acr build --image "devopsoh/api-user-java:${{ github.sha }}" --registry openhackx6e34ru4acr --file Dockerfile .
+        az acr build --image "devopsoh/api-trips:${{ github.sha }}" --registry openhackx6e34ru4acr --file Dockerfile .
