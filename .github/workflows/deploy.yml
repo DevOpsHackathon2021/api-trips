@@ -1,4 +1,4 @@
-name: Build Push Deploy
+name: Deploy
 
 on:
   push:
@@ -60,7 +60,7 @@ jobs:
             labels: worflow-failed
             body: Deployment to staging failed healthcheck for commit ${{github.sha}}
 
-    deployProduction:
+  deployProduction:
       if: success()             # Deploy only when staging deploy and health check was successful
       needs: deployStaging      # Wait for deploy
       runs-on: ubuntu-latest
